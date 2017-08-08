@@ -1,0 +1,260 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StoreManager.master.cs" Inherits="ADProject.StoreManager" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no" />
+
+
+    <title>Welcome</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/else.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="<%= Page.ResolveClientUrl("~/js/bootstrap.min.js") %>"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#lbLogout").removeClass("label label-default");
+            $("#lbLogout").addClass("glyphicon glyphicon-log-out");
+        });
+    </script>
+      <script src="../js/HideMenu.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <!-- top nav -->
+                        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="StoreManagerMain.aspx"><span>
+                                        <img alt="Logo" src="../Images/logo.png" height="30" /></span>LOGIC University Stationery Store Inventory System</a>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <div class="nav navbar-btn btn-primary btn-group">
+                                                <button class="btn btn-primary">
+                                                    <i class="glyphicon glyphicon-user"></i>
+                                                    <asp:Label ID="lblUsername" runat="server" Text="Label"></asp:Label>
+                                                </button>
+                                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li>
+                                                        <asp:LinkButton ID="lbLogout" runat="server" CssClass="glyphicon glyphicon-log-out" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top nav -->
+
+                <!-- banner -->
+                <div class="col-lg-12 banner">
+                    <div class="container">
+                        <img class="img-responsive" style="width: 100%; height: auto;" src="../Images/banner.gif" />
+                    </div>
+                </div>
+
+                <!-- banner -->
+                <!-- navbar -->
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="col-lg-8">
+                            <nav class="navbar navbar-default">
+
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="StoreManagerMain.aspx"><i class="glyphicon glyphicon-home"></i></a></li>
+
+                                            <li><a href="ApproveAdjustment.aspx"><i class="glyphicon glyphicon-pencil"></i>Approve Adjustment</a></li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-file"></i>Reports<b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="ManageStock.aspx">View Stock</a></li>
+                                                    <li><a href="ManageProduct.aspx">Manage Stock</a></li>
+                                                    <li><a href="StoreAdjustmentVoucher.aspx"> Stock Adjustment</a></li>
+                                                    <li><a href="PurchasingOrderForm.aspx">Purchasing Order</a></li>
+                                                    <li><a>Stationery Order Trend Analysis Comparison Report</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- mainview -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="well">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mainview -->
+                        </div>
+                        <!-- reminder list -->
+                        <div class="col-lg-4">
+                            <div class="well">
+                                <nav class="navbar navbar-default">
+                                    <a class="navbar-brand">
+                                        <strong><i class="glyphicon glyphicon-bell" aria-hidden="true"></i>Notification <span class="badge">
+
+                                            <asp:UpdatePanel ID="upNotification" runat="server">
+
+                                                <ContentTemplate>
+
+                                                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+                                                    <asp:Timer runat="server" Interval="5000"></asp:Timer>
+
+                                                    <asp:Label ID="Notificationlb" runat="server" Text="Label"></asp:Label>
+
+
+                                                </ContentTemplate>
+
+                                            </asp:UpdatePanel>
+
+
+                                        </span></strong>
+
+
+                                    </a>
+                                </nav>
+
+                                <!-- Reorder -->
+
+                                <div id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <%--<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-edit"></span>Adjustment Voucher <span class="badge">4</span>
+                                                </a>--%>
+                                                <%-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">--%>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                                    <i class="glyphicon glyphicon-export"></i>Adjustment 
+                                                    <span class="badge">
+
+                                                        <!-- update panel Adjustment -->
+
+                                                        <asp:UpdatePanel ID="upAdjustmentNumber" runat="server">
+
+                                                            <ContentTemplate>
+
+                                                                <asp:Timer ID="tAdjGrid" runat="server" Interval="5000"></asp:Timer>
+
+                                                                <asp:Label ID="AdjustmentReminderlb" runat="server" Text="Label"></asp:Label>
+
+
+
+                                                            </ContentTemplate>
+
+                                                        </asp:UpdatePanel>
+                                                    </span>
+
+
+                                                    <!-- update panel Adjustment -->
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="#">
+                                                    <!--gridview Adjustment-->
+
+                                                    <asp:UpdatePanel ID="upAdjustmentGrid" runat="server">
+
+                                                        <ContentTemplate>
+
+                                                            <asp:Timer ID="tGrid" runat="server" Interval="5000"></asp:Timer>
+
+                                                            <asp:GridView ID="gvAdjustment" runat="server" DataSourceID="dsReminderAdjustment" AutoGenerateColumns="False">
+
+                                                                <Columns>
+                                                                    <asp:BoundField DataField="Employee Name" HeaderText="Employee Name" SortExpression="Employee Name"></asp:BoundField>
+
+                                                                    <asp:BoundField DataField="Issued Date" HeaderText="Issued Date" SortExpression="Issued Date"></asp:BoundField>
+
+                                                                </Columns>
+
+                                                            </asp:GridView>
+
+                                                            <asp:SqlDataSource ID="dsReminderAdjustment" runat="server" ConnectionString="<%$ ConnectionStrings:SA42-Team2-ADProjectConnectionString %>" SelectCommand="SELECT Employee.EmployeeName AS [Employee Name], AdjustmentVoucher.IssuedDate AS [Issued Date] FROM Employee INNER JOIN AdjustmentVoucher ON Employee.EmployeeId = AdjustmentVoucher.EmployeeId WHERE (AdjustmentVoucher.ApprovalStatus = N'Pending') AND (AdjustmentVoucher.ApproveRole = 4)"></asp:SqlDataSource>
+
+
+                                                        </ContentTemplate>
+
+                                                    </asp:UpdatePanel>
+
+
+                                                    <!--gridview Adjustment-->
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Reorder -->
+
+
+                            </div>
+                        </div>
+                        <!-- reminder list -->
+                    </div>
+                </div>
+            </div>
+            <footer class="modal-footer">
+                <div class="container">
+                    <p class=" text-center text-muted">Copyright ©1996-2016 Team2 Corporation, All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>

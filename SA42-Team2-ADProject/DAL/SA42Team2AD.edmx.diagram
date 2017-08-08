@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="879985e83c9549e2969639f22bba296b" Name="Diagram1">
+        <EntityTypeShape EntityType="SA42Team2.AdjustmentVoucherDetail" Width="2.125" PointX="5.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.Category" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.Department" Width="1.5" PointX="0.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.DisbursementList" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.DisbursementListDetail" Width="1.5" PointX="8.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.Employee" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.PurchasingOrder" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.PurchasingOrderDetail" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.Requisition" Width="1.5" PointX="3" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.RequisitionDetail" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.Role" Width="1.5" PointX="1.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA42Team2.UOM" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="SA42Team2.FK_Department_ContactPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_Department_DeptHead" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_Department_Representative" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_DisbursementList_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_DisbursementListDetail_DisbursementList" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_Employee_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_PurchasingOrder_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_Requisition_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_PurchasingOrderDetail_PurchasingOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SA42Team2.FK_RequisitionDetail_Requisiton" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SA42Team2.Reminder" Width="1.5" PointX="5.25" PointY="17.875" />
+        <EntityTypeShape EntityType="SA42Team2.StationeryTransaction" Width="1.5" PointX="5.25" PointY="21.875" />
+        <EntityTypeShape EntityType="SA42Team2.StorageBin" Width="1.5" PointX="10.375" PointY="8.875" />
+        <EntityTypeShape EntityType="SA42Team2.Stationery" Width="1.5" PointX="3" PointY="10.5" />
+        <EntityTypeShape EntityType="SA42Team2.Supplier" Width="1.5" PointX="3.5" PointY="4.125" />
+        <AssociationConnector Association="SA42Team2.FK_AdjustmentVoucherDetail_Stationery" />
+        <AssociationConnector Association="SA42Team2.FK_Stationery_Category" />
+        <AssociationConnector Association="SA42Team2.FK_DisbursementListDetail_Stationery" />
+        <AssociationConnector Association="SA42Team2.FK_PurchasingOrder_Supplier" />
+        <AssociationConnector Association="SA42Team2.FK_PurchasingOrderDetail_Stationery" />
+        <AssociationConnector Association="SA42Team2.FK_DamagedReminder_Stationery" />
+        <AssociationConnector Association="SA42Team2.FK_RequisitionDetail_Stationery" />
+        <AssociationConnector Association="SA42Team2.FK_Stationery_StorageBin" />
+        <AssociationConnector Association="SA42Team2.FK_Stationery_Supplier1" />
+        <AssociationConnector Association="SA42Team2.FK_Stationery_Supplier2" />
+        <AssociationConnector Association="SA42Team2.FK_Stationery_Supplier3" />
+        <AssociationConnector Association="SA42Team2.FK_Stationery_UOM" />
+        <AssociationConnector Association="SA42Team2.FK_StationeryTransaction_Stationery" />
+        <EntityTypeShape EntityType="SA42Team2.RetrievalList" Width="1.5" PointX="9.625" PointY="0.75" />
+        <AssociationConnector Association="SA42Team2.FK_StorageBin_StorageBin" />
+        <EntityTypeShape EntityType="SA42Team2.Login" Width="1.5" PointX="3" PointY="17.625" />
+        <AssociationConnector Association="SA42Team2.FK_Login_Employee" />
+        <EntityTypeShape EntityType="SA42Team2.AdjustmentVoucher" Width="1.5" PointX="3" PointY="29.25" />
+        <AssociationConnector Association="SA42Team2.FK_AdjustmentVoucher_Employee" />
+        <AssociationConnector Association="SA42Team2.FK_AdjustmentVoucherDetail_AdjustmentVoucher" />
+        <EntityTypeShape EntityType="SA42Team2.CollectionPoint" Width="1.5" PointX="1.25" PointY="32.875" />
+        <AssociationConnector Association="SA42Team2.FK_Department_CollectionPoint" />
+        <EntityTypeShape EntityType="SA42Team2.Report" Width="1.5" PointX="7.375" PointY="5.75" />
+        <AssociationConnector Association="SA42Team2.FK_AdjustmentVoucher_Role" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,83 @@
+﻿<asp:Button runat="server"
+CssClass="btn btn-default"
+ />
+
+ <asp:DropDownList runat="server"
+CssClass="form-control"
+
+/>
+<asp:TextBox runat="server"
+ CssClass="form-control"
+
+ />
+
+ <asp:Calendar 
+Height="30px" 
+Width="30px" 
+CssClass="table" 
+ runat="server"
+/>
+
+<asp:CheckBox 
+CssClass="checkbox"
+ runat="server" />
+
+<asp:CheckBoxList 
+CssClass="checkbox"
+runat="server"/>
+
+<asp:Image runat="server" 
+CssClass="img-rounded"
+ />
+
+<asp:ImageButton
+CssClass="img-rounded"
+ runat="server" />
+
+<asp:LinkButton
+CssClass="label label-default"
+ runat="server" />
+
+ <asp:ListBox CssClass="jumbotron"
+runat="server" />
+
+
+<asp:Panel  CssClass="panel panel-default"
+runat="server" />
+
+<asp:Table CssClass="table table-bordered table-hover"
+runat="server"/>
+
+
+
+<asp:GridView  runat="server" CssClass="table table-bordered table-hover" />
+
+ <asp:CompareValidator runat="server" Font-Names="Arial" ForeColor="#CC0000"/>
+
+ <asp:RegularExpressionValidator runat="server" Font-Names="Arial" ForeColor="#CC0000"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

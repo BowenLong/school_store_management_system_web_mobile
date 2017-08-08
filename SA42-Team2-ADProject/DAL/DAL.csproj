@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B003EC4-486E-4CBD-9560-BAE17D4DBBF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjustmentVoucher.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustmentVoucherDetail.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BinForRetrieval.cs" />
+    <Compile Include="Category.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionPoint.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DisbursementList.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DisbursementListDetail.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetRetrievalListForBin_Result.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RetrievalDetail.cs" />
+    <Compile Include="Models\StationeryForRetrieval.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingOrder.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasingOrderDetail.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reminder.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Requisition.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RequisitionDetail.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetrievalList.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SA42Team2AD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SA42Team2AD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SA42Team2AD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SA42Team2AD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SA42Team2AD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Stationery.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Partial.cs" />
+    <Compile Include="StationeryTransaction.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StorageBin.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UOM.cs">
+      <DependentUpon>SA42Team2AD.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SA42Team2AD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SA42Team2AD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="SA42Team2AD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SA42Team2AD.edmx</DependentUpon>
+      <LastGenOutput>SA42Team2AD.Context.cs</LastGenOutput>
+    </None>
+    <None Include="SA42Team2AD.edmx.diagram">
+      <DependentUpon>SA42Team2AD.edmx</DependentUpon>
+    </None>
+    <None Include="SA42Team2AD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SA42Team2AD.edmx</DependentUpon>
+      <LastGenOutput>SA42Team2AD.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

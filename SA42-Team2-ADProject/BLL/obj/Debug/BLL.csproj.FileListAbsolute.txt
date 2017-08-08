@@ -1,0 +1,42 @@
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\bin\Debug\BLL.dll
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\bin\Debug\BLL.pdb
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\bin\Debug\DAL.dll
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\bin\Debug\DAL.pdb
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\obj\Debug\BLL.dll
+c:\users\e0015143\documents\visual studio 2013\Projects\SA42-Team2-ADProject\BLL\obj\Debug\BLL.pdb
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\bin\Debug\BLL.dll
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\bin\Debug\BLL.pdb
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\bin\Debug\DAL.dll
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\bin\Debug\DAL.pdb
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\obj\Debug\BLL.dll
+C:\Users\e0015143\Documents\Visual Studio 2013\Projects\Team2\SA42-Team2-ADProject\BLL\obj\Debug\BLL.pdb
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.dll
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.dll
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.pdb
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.dll
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.pdb
+D:\SA 42\AD Team2\ADProj\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.pdb
+D:\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.dll
+D:\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.pdb
+D:\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.dll
+D:\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.pdb
+D:\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.dll
+D:\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.pdb
+C:\AD Project\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.dll
+C:\AD Project\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.pdb
+C:\AD Project\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.dll
+C:\AD Project\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.pdb
+C:\AD Project\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\AD Project\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.dll
+C:\AD Project\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.pdb
+D:\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.dll
+D:\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\BLL.pdb
+D:\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.dll
+D:\ADProj\SA42-Team2-ADProject Max\BLL\bin\Debug\DAL.pdb
+D:\ADProj\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\ADProj\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.dll
+D:\ADProj\SA42-Team2-ADProject Max\BLL\obj\Debug\BLL.pdb

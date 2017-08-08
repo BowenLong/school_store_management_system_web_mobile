@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SA42Team2StoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="AdjustmentVoucherDetails">
+      <EntityTypeMapping TypeName="SA42Team2.AdjustmentVoucherDetail">
+        <MappingFragment StoreEntitySet="AdjustmentVoucherDetail">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="AdjustmentVCDId" ColumnName="AdjustmentVCDId" />
+          <ScalarProperty Name="AdjustmentVCId" ColumnName="AdjustmentVCId" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="QtyAdjusted" ColumnName="QtyAdjusted" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="SA42Team2.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="SA42Team2.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ContactPersonId" ColumnName="ContactPersonId" />
+          <ScalarProperty Name="HeadId" ColumnName="HeadId" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="CollectionPointId" ColumnName="CollectionPointId" />
+          <ScalarProperty Name="RepresentativeId" ColumnName="RepresentativeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisbursementLists">
+      <EntityTypeMapping TypeName="SA42Team2.DisbursementList">
+        <MappingFragment StoreEntitySet="DisbursementList">
+          <ScalarProperty Name="DisbursementListId" ColumnName="DisbursementListId" />
+          <ScalarProperty Name="RetriveDate" ColumnName="RetriveDate" />
+          <ScalarProperty Name="DisbursementDate" ColumnName="DisbursementDate" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="SignatureURL" ColumnName="SignatureURL" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisbursementListDetails">
+      <EntityTypeMapping TypeName="SA42Team2.DisbursementListDetail">
+        <MappingFragment StoreEntitySet="DisbursementListDetail">
+          <ScalarProperty Name="DisbursementListDetailId" ColumnName="DisbursementListDetailId" />
+          <ScalarProperty Name="DisbursementListId" ColumnName="DisbursementListId" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="GivenQty" ColumnName="GivenQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="SA42Team2.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="IsDelegate" ColumnName="IsDelegate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchasingOrders">
+      <EntityTypeMapping TypeName="SA42Team2.PurchasingOrder">
+        <MappingFragment StoreEntitySet="PurchasingOrder">
+          <ScalarProperty Name="ExpectedDeliveryDate" ColumnName="ExpectedDeliveryDate" />
+          <ScalarProperty Name="POId" ColumnName="POId" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchasingOrderDetails">
+      <EntityTypeMapping TypeName="SA42Team2.PurchasingOrderDetail">
+        <MappingFragment StoreEntitySet="PurchasingOrderDetail">
+          <ScalarProperty Name="PODetailId" ColumnName="PODetailId" />
+          <ScalarProperty Name="POId" ColumnName="POId" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisitions">
+      <EntityTypeMapping TypeName="SA42Team2.Requisition">
+        <MappingFragment StoreEntitySet="Requisition">
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionDetails">
+      <EntityTypeMapping TypeName="SA42Team2.RequisitionDetail">
+        <MappingFragment StoreEntitySet="RequisitionDetail">
+          <ScalarProperty Name="RequisitionDetailId" ColumnName="RequisitionDetailId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="SA42Team2.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UOMs">
+      <EntityTypeMapping TypeName="SA42Team2.UOM">
+        <MappingFragment StoreEntitySet="UOM">
+          <ScalarProperty Name="UOMId" ColumnName="UOMId" />
+          <ScalarProperty Name="UOMDescription" ColumnName="UOMDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetRetrievalListForBin" FunctionName="SA42Team2.Store.GetRetrievalListForBin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SA42Team2.GetRetrievalListForBin_Result">
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="Needed" ColumnName="Needed" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Reminders">
+      <EntityTypeMapping TypeName="SA42Team2.Reminder">
+        <MappingFragment StoreEntitySet="Reminder">
+          <ScalarProperty Name="ReminderType" ColumnName="ReminderType" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="ReminderId" ColumnName="ReminderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StationeryTransactions">
+      <EntityTypeMapping TypeName="SA42Team2.StationeryTransaction">
+        <MappingFragment StoreEntitySet="StationeryTransaction">
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="TransactionQuantity" ColumnName="TransactionQuantity" />
+          <ScalarProperty Name="StationeryID" ColumnName="StationeryID" />
+          <ScalarProperty Name="Participant" ColumnName="Participant" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="StationeryTransactionID" ColumnName="StationeryTransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StorageBins">
+      <EntityTypeMapping TypeName="SA42Team2.StorageBin">
+        <MappingFragment StoreEntitySet="StorageBin">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Bin" ColumnName="Bin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stationeries">
+      <EntityTypeMapping TypeName="SA42Team2.Stationery">
+        <MappingFragment StoreEntitySet="Stationery">
+          <ScalarProperty Name="EstimatedBalance" ColumnName="EstimatedBalance" />
+          <ScalarProperty Name="Price3" ColumnName="Price3" />
+          <ScalarProperty Name="Price2" ColumnName="Price2" />
+          <ScalarProperty Name="Price1" ColumnName="Price1" />
+          <ScalarProperty Name="Supplier3" ColumnName="Supplier3" />
+          <ScalarProperty Name="Supplier2" ColumnName="Supplier2" />
+          <ScalarProperty Name="Supplier1" ColumnName="Supplier1" />
+          <ScalarProperty Name="Bin" ColumnName="Bin" />
+          <ScalarProperty Name="UOMId" ColumnName="UOMId" />
+          <ScalarProperty Name="ReorderQuantity" ColumnName="ReorderQuantity" />
+          <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="SA42Team2.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Fax_No" ColumnName="Fax No" />
+          <ScalarProperty Name="Phone_No" ColumnName="Phone No" />
+          <ScalarProperty Name="GST_Registration_No" ColumnName="GST Registration No" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RetrievalLists">
+      <EntityTypeMapping TypeName="SA42Team2.RetrievalList">
+        <MappingFragment StoreEntitySet="RetrievalList">
+          <ScalarProperty Name="BinStatus" ColumnName="BinStatus" />
+          <ScalarProperty Name="DisbursementListId" ColumnName="DisbursementListId" />
+          <ScalarProperty Name="StationeryId" ColumnName="StationeryId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RetriveDate" ColumnName="RetriveDate" />
+          <ScalarProperty Name="GivenQty" ColumnName="GivenQty" />
+          <ScalarProperty Name="RequestQty" ColumnName="RequestQty" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Bin" ColumnName="Bin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="SA42Team2.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdjustmentVouchers">
+      <EntityTypeMapping TypeName="SA42Team2.AdjustmentVoucher">
+        <MappingFragment StoreEntitySet="AdjustmentVoucher">
+          <ScalarProperty Name="ApproveRole" ColumnName="ApproveRole" />
+          <ScalarProperty Name="ApproveDate" ColumnName="ApproveDate" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="IssuedDate" ColumnName="IssuedDate" />
+          <ScalarProperty Name="AdjustmentVCId" ColumnName="AdjustmentVCId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollectionPoints">
+      <EntityTypeMapping TypeName="SA42Team2.CollectionPoint">
+        <MappingFragment StoreEntitySet="CollectionPoint">
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="CollectionPointName" ColumnName="CollectionPointName" />
+          <ScalarProperty Name="CollectionPointID" ColumnName="CollectionPointID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="SA42Team2.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
